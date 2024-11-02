@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo - Pop up</title>
+</head>
+<body>
+
+    <button><img src="./assets/images/diseno-grafico.png" alt="diseño gráfico"></button>
+
+<dialog>
+
+    <div class="modal">
+
+<h2>Diseño Gráfico: Creando una identidad visual fuerte</h2>
+
+<p>La identidad visual es la cara de tu marca. Un buen diseño 
+gráfico no solo refleja tus valores, sino que también establece 
+la confianza con tu audiencia. En Betterfly Media, trabajamos con 
+logotipos, paletas de colores, tipografía y más. Aplicamos estos 
+elementos en todos los aspectos visuales de tu negocio: desde tu página web, 
+redes sociales, tarjetas de visita, fichas de anamnesis, hasta uniformes 
+personalizados. Todo pensado para que tu marca sea reconocible y memorable.</p>
+
+<button>Ok</button>
+
+</div>
+
+</dialog>
+    
+<script>
+
+const button = document.querySelector("button")
+const modal = document.querySelector("dialog")
+const buttonClose = document.querySelector("dialog button")
+
+button.onclick = function () {
+    modal.showModal()
+}
+
+buttonClose.onclick = function () {
+    modal.close()
+}
+
+</script>
+
+</body>
+</html>
