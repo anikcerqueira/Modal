@@ -8,7 +8,8 @@ body {
 }
 
 dialog::backdrop {
-    background-color: #3058A030 ;
+    background-color: #3058A030;
+backdrop-filter: blur(5px);
 }
 
 dialog {
